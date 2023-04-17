@@ -1,8 +1,7 @@
 #include "heap.h"
 #include <iostream>
 
-
-// buffer representation = {15, 5, 10, 3, 6, 9, 12}
+using namespace std;
 
 heap::heap() {
 }
@@ -26,17 +25,17 @@ void heap::insert(int value) {
 }
 
 void heap::remove_max() {
-  buffer[0] = buffer.size() - 1;
-  buffer.pop_back();
+  buffer[0] = buffer.back();
+  buffer.pop_back(); // 10 40 30 20
   int position = 0;
   while(true) {
     int left = 2 * position + 1;
     int right = 2 * position + 2;
     int largest = position;
-    if(left < buffer.size() && buffer[left] > buffer[largest]) {
+    if(left < (buffer.size() - 1) && buffer[left] > buffer[largest]) {
       largest = left;
     }
-    else if(right < buffer.size() && buffer[right] > buffer[largest]) {
+    if(right < (buffer.size() - 1) && buffer[right] > buffer[largest]) {
       largest = right;
     }
     if(largest == position) {
@@ -54,9 +53,9 @@ int heap::max() {
 }
 
 void heap::print() {
-  std::cout << "In order:\n"; 
+  cout << "In order:\n"; 
   for(auto it = buffer.begin(); it != buffer.end(); it++) {
-    std::cout << *it << "\n";
+    cout << *it << "\n";
   }
-  std::cout.flush();
+  cout.flush();
 }

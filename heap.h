@@ -5,6 +5,7 @@
 class heap {
  private:
   std::vector<int> buffer;
+  int largest_number;
  public:
   heap();
   int size();
