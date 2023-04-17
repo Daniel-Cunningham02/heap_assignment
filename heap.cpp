@@ -2,6 +2,8 @@
 #include <iostream>
 
 
+// buffer representation = {15, 5, 10, 3, 6, 9, 12}
+
 heap::heap() {
 }
 
