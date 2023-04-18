@@ -1,11 +1,11 @@
-/**
+3/**
  * @file heap.cpp
  * @author Anthony Osborne
  * @date 2023-04-18
  * @brief implementation of the the heap class
  * 
  * the methods and funcitons that create the heap class's functionality 
- * insert and print  written by Anthony Osborne
+ * insert and print written by Anthony Osborne
  * remove max and others written by Daniel Cunningham
  */
 
@@ -37,7 +37,7 @@ void heap::insert(int value) {
 
 void heap::remove_max() {
   buffer[0] = buffer.back();
-  buffer.pop_back(); // 10 40 30 20
+  buffer.pop_back();
   int position = 0;
   while(true) {
     int left = 2 * position + 1;

@@ -23,7 +23,7 @@ int main() {
     h.remove_max();
   }
   
-  cout << "Max element: " << h.max() << "\n";  // should print "30"
+  cout << "Max element: " << h.max() << "\n";
 
   return 0;
 }
