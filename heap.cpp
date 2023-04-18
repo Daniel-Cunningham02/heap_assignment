@@ -1,4 +1,4 @@
-3/**
+/**
  * @file heap.cpp
  * @author Anthony Osborne
  * @date 2023-04-18
@@ -36,7 +36,7 @@ void heap::insert(int value) {
 }
 
 void heap::remove_max() {
-  buffer[0] = buffer.back();
+  buffer[0] = buffer.back(); //assigns the first element in the buffer to be the last
   buffer.pop_back();
   int position = 0;
   while(true) {
@@ -65,7 +65,7 @@ int heap::max() {
 
 void heap::print() {
   cout << "In order:\n"; 
-  for(auto it = buffer.begin(); it != buffer.end(); it++) {
+  for(auto it = buffer.begin(); it != buffer.end(); it++) { //auto allows us to iterate over more complex data structures
     cout << *it << "\n";
   }
   cout.flush();
