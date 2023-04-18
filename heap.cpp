@@ -1,3 +1,14 @@
+/**
+ * @file heap.cpp
+ * @author Anthony Osborne
+ * @date 2023-04-18
+ * @brief implementation of the the heap class
+ * 
+ * the methods and funcitons that create the heap class's functionality 
+ * insert and print  written by Anthony Osborne
+ * remove max and others written by Daniel Cunningham
+ */
+
 #include "heap.h"
 #include <iostream>
 

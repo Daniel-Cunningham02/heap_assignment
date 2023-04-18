@@ -1,3 +1,12 @@
+/**
+ * @file heap.h
+ * @author Anthony Osborne
+ * @date 2023-04-18
+ * @brief header file for the heap class
+ * 
+ * written bby Daniel Cunningham and Colin Douglas
+ */
+
 #ifndef HEAP_H
 #define HEAP_H
 #include <vector>

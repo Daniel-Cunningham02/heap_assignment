@@ -1,3 +1,12 @@
+/**
+ * @file main.cpp
+ * @author Anthony Osborne
+ * @date 2023-04-18
+ * @brief driver code for the assignment
+ * written by Colin Douglas Daniel Cunningham
+ * 
+ */
+
 #include "heap.h"
 #include <iostream>
 
